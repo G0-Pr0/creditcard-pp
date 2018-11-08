@@ -19,4 +19,12 @@ class CreditCard {
     public boolean isBlocked() {
         return this.blockade;
     }
+    
+    public void pay(double cash){
+	    this.balance+=cash
+	}
+	
+    public void repay(){
+	    if(balance<0){balance=0;}
+	}
 }
